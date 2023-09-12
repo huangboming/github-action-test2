@@ -1,29 +1,29 @@
 # This workflow will build a golang project
 
-name: Test on self-hosted runner
+# name: Test on self-hosted runner
 
-on:
-  push:
-    branches: [ "main" ]
+# on:
+#   push:
+#     branches: [ "main" ]
 
-jobs:
-  build:
-    name: Build & Test Go Project
-    runs-on: self-hosted
-    steps:
+# jobs:
+#   build:
+#     name: Build & Test Go Project
+#     runs-on: self-hosted
+#     steps:
       
-    - 
-      name: Checkout
-      uses: actions/checkout@v3
+#     - 
+#       name: Checkout
+#       uses: actions/checkout@v3
 
-    - 
-      name: Set up Go
-      uses: actions/setup-go@v4
-      with:
-        go-version: '1.20'
+#     - 
+#       name: Set up Go
+#       uses: actions/setup-go@v4
+#       with:
+#         go-version: '1.20'
 
-    - name: Build
-      run: go build -v ./...
+#     - name: Build
+#       run: go build -v ./...
 
-    - name: Test
-      run: go test -v ./...
+#     - name: Test
+#       run: go test -v ./...
